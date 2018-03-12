@@ -38,6 +38,7 @@ class Homestead
       if settings.has_key?("gui") && settings["gui"]
           vb.gui = true
       end
+	vb.name = settings["name"] ||= "homestead_improved"
     end
 
     # Configure A Few VMware Settings
